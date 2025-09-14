@@ -21,6 +21,24 @@ Project ini memungkinkan prediksi **tarif tunggal (single trip)** maupun **batch
 
 ---
 
+## 🌐 Sumber Dataset
+
+Dataset diambil dari [Kaggle: Uber Fares Dataset](https://www.kaggle.com/datasets/yasserh/uber-fares-dataset)
+
+Dataset ini berisi informasi tentang perjalanan Uber termasuk lokasi penjemputan, timestamp, dan jumlah tarif. Fitur-fitur yang ada meliputi:
+
+- `fare_amount`: Variabel target (kontinu) yang menunjukkan tarif dalam USD
+- `pickup_datetime`: Timestamp penjemputan
+- `pickup_longitude`: Koordinat bujur lokasi penjemputan
+- `pickup_latitude`: Koordinat lintang lokasi penjemputan
+- `dropoff_longitude`: Koordinat bujur lokasi pengantaran
+- `dropoff_latitude`: Koordinat lintang lokasi pengantaran
+- `passenger_count`: Jumlah penumpang dalam kendaraan
+
+> Catatan: Dalam aplikasi Streamlit ini, **latitude dan longitude tidak digunakan**, hanya jarak, jumlah penumpang, waktu, hari, dan bulan.
+
+---
+
 ## 📂 Struktur Project
 
 Uber Fare Prediction/
