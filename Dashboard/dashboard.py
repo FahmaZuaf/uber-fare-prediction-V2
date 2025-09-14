@@ -92,7 +92,7 @@ if submitted:
         # Buat DataFrame agar sesuai feature names
         features = pd.DataFrame(
             [[distance, passenger, hour, day, month]],
-            columns=["distance", "passenger", "hour", "day", "month"]
+            columns=["distance", "passenger_count", "hour", "day", "month"]
         )
         scaled = scaler.transform(features)
         fare_usd = model.predict(scaled)[0]
@@ -108,14 +108,14 @@ if submitted:
 # === BATCH PREDICTION ===
 st.subheader("📂 Batch Prediction (Upload CSV)")
 uploaded_file = st.file_uploader(
-    "Upload file CSV dengan kolom: distance, passenger, hour, day, month",
+    "Upload file CSV dengan kolom: distance, passenger_count, hour, day, month",
     type="csv"
 )
 
 if uploaded_file is not None:
     try:
         data = pd.read_csv(uploaded_file)
-        required_cols = ["distance", "passenger", "hour", "day", "month"]
+        required_cols = ["distance", "passenger_count", "hour", "day", "month"]
         if all(col in data.columns for col in required_cols):
             df_input = data[required_cols].copy()  # pastikan DataFrame
             scaled = scaler.transform(df_input)
