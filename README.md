@@ -24,18 +24,31 @@ Project ini memungkinkan prediksi **tarif tunggal (single trip)** maupun **batch
 ## 📂 Struktur Project
 
 Uber Fare Prediction/
+
 ├─ Dashboard/
+
 │ └─ dashboard.py # Streamlit app
+
 ├─ models/
+
 │ ├─ uber_fare_model.pkl
+
 │ └─ scaler.pkl
+
 ├─ Images/
+
 │ └─ logo.jpg
+
 ├─ data/
+
 │ └─ uber.csv
+
 ├─ notebooks/
+
 │ └─ uber-fare-predict.ipynb
+
 ├─ requirements.txt
+
 └─ README.md
 
 ---
