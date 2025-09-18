@@ -141,3 +141,6 @@ Kurs diambil secara real-time menggunakan API.
 ⚡ Lisensi
 
 © 2025 Fahma Zuaf Zarir - All Rights Reserved.
+
+
+Selamat Mencoba
